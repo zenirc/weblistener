@@ -1,10 +1,7 @@
-var api = require('zenircbot-api')
-var bot_config = api.load_config('../../bot.json')
-var zen = new api.ZenIRCBot(bot_config.redis.host,
-                            bot_config.redis.port,
-                            bot_config.redis.db)
-var weblistener_config = api.load_config('./weblistener.json')
 var express = require('express')
+var api = require('zenircbot-api')
+var zen = new api.ZenIRCBot()
+var weblistener_config = api.load_config('./weblistener.json')
 var app = express();
 
 
