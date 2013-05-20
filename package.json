@@ -2,7 +2,7 @@
     "author": "Wraithan (http://wraithan.net)",
     "name": "weblistener",
     "description": "A simple listener that takes POST bodies and puts them in a Redis Pub/Sub channel",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "http://github.com/zenirc/weblistener",
     "repository": {
         "type": "git",
