@@ -1,7 +1,8 @@
+var path = require('path')
 var express = require('express')
 var api = require('zenircbot-api')
 var zen = new api.ZenIRCBot()
-var weblistener_config = api.load_config('./weblistener.json')
+var weblistener_config = api.load_config(path(__dirname, 'weblistener.json'))
 var app = express()
 
 
