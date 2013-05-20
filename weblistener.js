@@ -2,7 +2,7 @@ var express = require('express')
 var api = require('zenircbot-api')
 var zen = new api.ZenIRCBot()
 var weblistener_config = api.load_config('./weblistener.json')
-var app = express();
+var app = express()
 
 
 zen.register_commands('weblistener.js', [])
