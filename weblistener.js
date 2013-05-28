@@ -2,7 +2,7 @@ var path = require('path')
 var express = require('express')
 var api = require('zenircbot-api')
 var zen = new api.ZenIRCBot()
-var weblistener_config = api.load_config(path(__dirname, 'weblistener.json'))
+var config = api.load_config(path.join(__dirname, 'weblistener.json'))
 var app = express()
 
 
@@ -22,4 +22,4 @@ app.post('/:app', function(req, res) {
   res.send('', 200)
 })
 
-app.listen(weblistener_config.port)
+app.listen(config.port)
